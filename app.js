@@ -4,7 +4,6 @@ const dotenv = require('dotenv')
 const Sequelize = require("sequelize");
 const {DataTypes} = require("sequelize");
 const jwt = require('jsonwebtoken');
-const {token} = require("mysql/lib/protocol/Auth");
 
 
 
