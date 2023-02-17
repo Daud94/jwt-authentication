@@ -103,7 +103,9 @@ app.post('/login', authenticateToken, async function (req, res) {
 
 
 app.get('logout', function (req, res) {
-
+    res.logout()
+    req.session = null
+    res.redirect('/login')
 })
 
 
